@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+}
+
+.firstElement{
+  height: 70px;
+}
+
+
+.bodyContainer{
+  width: 100%;
+}
+
+.bodyElements{
+  width: 50%;
+  height: 200px;
+  border: 2px solid red;
+  margin: 15px auto;
+  border-radius: 20px;
+}
+
+.card{
+  width: 100%;
+}
+
+.card-content {
+  text-align: center;
+  position: relative;
+  padding: 5em;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-content{
+  transform: rotateX(.5turn);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5em 3em;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: grid;
+  align-content: center;
+}
+
+.card-back {
+  transform: rotateX(.5turn);
+}
+
